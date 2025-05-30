@@ -4,6 +4,7 @@
 "highlight ErrorMsg guifg=#FFFF00 guibg=NONE
 
 """""""""""""""""""""""""""""""""""" global setteng
+set clipboard+=unnamedplus
 set number
 "set relativenumber
 set autoindent
@@ -20,14 +21,14 @@ set scrolloff=6
 " autoclose
 inoremap " ""<left>
 inoremap ' ''<left>
-"inoremap ` ``<left>
+inoremap ` ``<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
 
 inoremap "" ""
 inoremap '' ''
-"inoremap `` ``
+inoremap `` ``
 inoremap () ()
 inoremap [] []
 inoremap {} {}
@@ -74,7 +75,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " themes
 
-"Plug 'Mofiqul/vscode.nvim'
+Plug 'Mofiqul/vscode.nvim'
 "Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 "Plug 'arzg/vim-colors-xcode', { 'as': 'xcode' }
 "Plug 'bluz71/vim-moonfly-colors'
@@ -134,7 +135,8 @@ set background=dark
 
 "colorscheme catppuccin
 "colorscheme nordic
-colorscheme onedarkpro
+"colorscheme onedarkpro
+colorscheme vscode
 "colorscheme moonfly
 "colorscheme tokyonight
 
